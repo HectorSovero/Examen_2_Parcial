@@ -8,12 +8,11 @@ describe('Aside', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [Aside]
-    })
-      .compileComponents();
+    }).compileComponents();
 
     fixture = TestBed.createComponent(Aside);
     component = fixture.componentInstance;
-    await fixture.whenStable();
+    fixture.detectChanges();
   });
 
   it('should create', () => {
