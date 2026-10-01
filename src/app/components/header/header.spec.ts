@@ -8,12 +8,11 @@ describe('Header', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [Header]
-    })
-      .compileComponents();
+    }).compileComponents();
 
     fixture = TestBed.createComponent(Header);
     component = fixture.componentInstance;
-    await fixture.whenStable();
+    fixture.detectChanges();
   });
 
   it('should create', () => {
